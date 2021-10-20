@@ -2,7 +2,7 @@ const express = require('express');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 require('./passport');
-
+require('dotenv').config()
 const app = express();
 
 app.use(cookieSession({
